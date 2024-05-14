@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HTML page</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Frank E Dupée IV">
+	</head>
+    <body>
+        <p>This is a basic HTML page written with Visual Studio Code.</p>
+    </body>
+</html>
