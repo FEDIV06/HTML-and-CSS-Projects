@@ -100,6 +100,6 @@ h1{
         background-image: url("../images/icons/smileyface1.png");
     }
     50% {
-        transform: translateY(300px);
+        transform: translateY(340px);
     }
 }
