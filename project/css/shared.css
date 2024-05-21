@@ -204,7 +204,7 @@ section {
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-#contact{
+#contact {
     background-color: #f5f3f3;
 }
 
@@ -301,7 +301,7 @@ section {
     float: right;
 }
 
-.terms:hover{
+.terms:hover {
     color: orange;
     text-decoration: underline;
 }
