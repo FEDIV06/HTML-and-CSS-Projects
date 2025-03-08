@@ -4,7 +4,7 @@ html {
     font-size: 100%;
 }
 
-.contact input[type="text"] {
+.reservation input[type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
