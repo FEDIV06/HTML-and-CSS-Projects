@@ -63,7 +63,7 @@ white when mouse over anchor elements in rollover*/{
     display: none; /*Prevents anchor links in div 
     from showing on browser until otherwise specified*/
     position: absolute; /*Absolute positions div 
-    element relatine to parent's position*/
+    element relative to parent's position*/
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
@@ -92,8 +92,7 @@ footer{
     align-items: center; /*Aligns nested HTML elements 
     in center i.e. table data and p's in footer*/
     margin: 0px -8px -8px -8px; /*Stretches footer 
-    background beyond browsers edge leaving no white
-    space*/
+    background beyond browsers edge leaving no white space*/
     background-color: rgb(1, 128, 106);
     border-top: 5px solid rgb(247, 177, 188);
     bottom: 0; /*Positions footer at screen bottom*/
@@ -178,11 +177,79 @@ P{
     padding: 10px;
 }
 
+/*Styling for screens 1200px or smaller*/
+@media screen and (max-width: 1200px){
+    .column{
+        width: 100%;
+        padding: 0px;
+        margin-left: -15px; /*Centers each column
+        on the screen*/
+    }
+}
+
 /*Specifically styles first 7 img tag elements 
 in elements w .column class*/
 .column img:nth-child(-n + 7){
     width: 500px;
     height: 350px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4),
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 
     0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.recipe-container{
+    width: 500px;
+    height: 350px;
+    margin: 100px auto 180px; /*Shorthand value 
+    top, right and left, then bottom*/
+}
+
+/*Styling for mobile size screens*/
+@media screen and (max-width: 600px){
+    .column img:nth-child(-n + 7){
+        width: 350px;
+        height: 225px;
+    }
+
+    .recipe-container{
+        width: 350px;
+        height: 225px;
+    }
+}
+
+.recipe-card-background{
+    background-color: rgb(149, 238, 223);
+}
+
+/*Alternates the background color on smaller screens*/
+@media screen and (max-width: 1200px){
+    #pork{
+        background-color: rgb(255, 255, 255);
+    }
+    #biscuits{
+        background-color: rgb(149, 238, 223);
+    }
+}
+
+/*FEATURED RECIPE*/
+
+/*Styles the featured recipe h3 tag*/
+#featured-header{
+    font-family: 'Sacramento', cursive;
+    /*Font from fonts.google.com*/
+    font-size: 60px;
+    color: rgb(0, 80, 67);
+}
+
+#featured-main-text{
+    text-align: justify;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+/*Sets margin L to 0.  Not needed on small screen 
+and centers text*/
+@media screen and (max-width: 1200px){
+    #featured-main-text{
+        margin-left: 0;
+    }
 }
