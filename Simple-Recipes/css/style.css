@@ -201,6 +201,8 @@ in elements w .column class*/
     height: 350px;
     margin: 100px auto 180px; /*Shorthand value 
     top, right and left, then bottom*/
+    perspective: 1000px; /*Tells browser now much 
+    3D space element should take up on screen*/
 }
 
 /*Styling for mobile size screens*/
@@ -252,4 +254,93 @@ and centers text*/
     #featured-main-text{
         margin-left: 0;
     }
+}
+
+/*Spceifically styles img tag nested in #featured
+div in Featured Recipe section*/
+@media screen and(min-width: 1600px){
+    #featured img{
+        width: 700px;
+        height: auto; /*Auto(matically) calculates 
+        image height based on width*/
+        margin-left: -100px;
+        margin-top: -20px; /*Margin-left/top overrides
+        margin styling from .recipe-container class
+        selector*/
+    }
+}
+
+/*Adjusts featured image position to center in div when
+width is 1599px or less*/
+@media screen and (max-width: 1599px){
+    #featured img{
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #featured .recipe-card-background{
+        height: 300px;
+    }
+    #featured img{
+        margin-top: -65px;
+    }
+}
+
+#featured-button{
+    display: block; /*Positions recipe button on own 
+    line from other elements in div*/
+    margin: 60px auto 0px;
+    background-color: rgb(1, 128, 106);
+    border-radius: 35px;
+    border: none; /*Romoves default border set by 
+    browser when border-radius is used*/
+    font-family: 'Josefin Slab', serif;
+    /*Font form fonts.google.com*/
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+/*Specifically styles hover effect of recipe button
+in Featured Recipe section*/
+#featured-button:hover{
+    background-color: rgb(247, 177, 188);
+}
+
+/*IMAGE FLIP*/
+
+/*Positions flip effect, defines transition time
+and defines a 3D effect*/
+.flip{
+    position: relative;
+    width: 100%;
+    height: 100%; /*Setting width/height to 100%
+    allows effect to use 100% of space*/
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    transform-style: preserve-3d; /*Treats elements 
+    as 3D objects instead of flat (2D)*/
+}
+
+.flip:hover{
+    transform: rotateY(-180deg); /*Rotates element
+    from right to left*/
+}
+
+.flip-front, .flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-back{
+    background-color: rgb(149, 238, 223);
+    border: 2px solid white;
+    transform: rotateY(180deg); /*Adds 180 degrees to
+    Previous -180 so text reads properly*/
 }
