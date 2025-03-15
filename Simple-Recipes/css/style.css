@@ -215,6 +215,10 @@ in elements w .column class*/
     .recipe-container{
         width: 350px;
         height: 225px;
+        margin: 100px auto 180px; /*Shorthand value:
+        top, right/left, then bottom*/
+        perspective: 1000px; /*Tells browser how much 
+        3D space element uses on screen*/
     }
 }
 
@@ -342,5 +346,51 @@ and defines a 3D effect*/
     background-color: rgb(149, 238, 223);
     border: 2px solid white;
     transform: rotateY(180deg); /*Adds 180 degrees to
-    Previous -180 so text reads properly*/
+    previous -180 so text reads properly*/
+}
+
+.text-container{
+    padding-top: 70px;
+}
+
+@media screen and (max-width: 600px){
+    .text-container{
+        padding-top: 0px;
+    }
+}
+
+/*RECIPE BUTTON*/
+
+input[type="button"]{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Josefin Slab', serif;
+    /*font from fonts.google.com*/
+    font-weight: bold;
+    font-size: 22px;
+    padding: 11px 17px;
+    color: rgb(1, 128, 106);
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(247, 177, 188);
+    color: white;
+}
+/*CONTACT FORM CSS*/
+
+/*Sets up ID contact div tag data to bo centered*/
+#contact{
+    display: block;
+    margin-bottom: 70px;
+}
+
+form{
+    display: table; /*Displays form in table
+    format: rows and columns*/
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto; /* Browser auto calculates 
+    margins to center the form on screen*/
 }
