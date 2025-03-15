@@ -394,3 +394,75 @@ form{
     margin-right: auto; /* Browser auto calculates 
     margins to center the form on screen*/
 }
+
+/*Targets input tags nested in form tags*/
+form input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(165, 165, 165);
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+    transition: 0.3s ease-out; /*Transitions back to 
+    light grey when user clicls away from input field*/
+}
+
+form input:focus{
+    border: 2px solid rgb(1, 128, 106);
+    color: black;
+    outline: none; /*Removes default border when 
+    focus pseudo class is triggered*/
+    transition: 0.3s ease-out;
+}
+
+label{
+    font-family: 'Josefin Slab', serif;
+    /*Font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both; /*Allows user to resize 
+    text area both width & height*/
+    border: 3px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(165, 165, 165);
+    font-size: 15px;
+    transition: 0.3s ease-out;
+    /*Transitions back to light grey*/
+}
+
+textarea:focus{
+    color: black;
+    border: 1px solid rgb(1, 128, 106);
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+input[type="submit"]{
+    background-color: rgb(1, 128, 106);
+    border: none;
+    border-radius: 35px;
+    font-family: 'Josefin Slab', serif;
+    /*Font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    float: right; /*Positions submit button to 
+    form's bottom right*/
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(247, 177, 188);
+}
