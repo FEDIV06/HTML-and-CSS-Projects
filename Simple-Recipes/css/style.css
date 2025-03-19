@@ -381,6 +381,17 @@ input[type="button"]:hover{
 
 /*ABOUT*/
 
+#about-text{
+    text-align: justify;
+}
+
+/*Sets margin L to 0.  Not needed on small screen 
+and centers text*/
+@media screen and (max-width: 1200px){
+    #about-text{
+        margin-left: 0;
+    }
+}
 
 /*CONTACT FORM CSS*/
 
