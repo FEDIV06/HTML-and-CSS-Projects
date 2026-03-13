@@ -12,7 +12,8 @@
     based on levels of specificity-->
   <link href="css/custom.css" rel="stylesheet">
   <!--CUSTOM CSS for multiple screen sizes-->
-  <link href="css/custom-css-media.css" rel="stylesheet" </head>
+  <link href="css/custom-css-media.css" rel="stylesheet">
+</head>
 
 <body>
   <!--BOOTSTRAP JAVASCRIPT-->
@@ -182,7 +183,7 @@
       <div class="d-flex flex-row flex-wrap">
         <!--MOVIE SELECTION-->
         <div class="col">
-          <div class="card">
+          <div class="card text-center">
             <h5 class="card-title">Please select a movie</h5>
             <div class="card-body">
               <select class="form-select" aria-label="Movie title selection">
@@ -196,7 +197,7 @@
         </div>
         <!--TIME SELECTION-->
         <div class="col">
-          <div class="card">
+          <div class="card text-center">
             <h5 class="card-title">Please select a show time</h5>
             <div class="card-body">
               <select class="form-select" aria-label="Show time selection">
@@ -213,12 +214,39 @@
         </div>
         <!--NUMBER OF TICKETS-->
         <div class="col">
-          <div class="card">
+          <div class="card text-center">
             <h5 class="card-title">Please select nubber of tickets</h5>
             <div class="card-body">
-              
+              <input type="number" id="quantity" value="1" step="1">
             </div>
           </div>
+        </div>
+      </div>
+      <!--BUY TICKETS BUTTON-->
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <button type="submit" class="btn yellow-btn">Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--CONTACT FORM-->
+  <section>
+    <div class="container" id="contact">
+      <h1>Contact Us!</h1>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First Name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last Name">
+        </div>
+        <div>
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+        <div>
+          <textarea class="form-control" rows="3" placeholder="Type Message Here..."></textarea>
+          <button type="submit" class="btn yellow-btn">Submit</button>
         </div>
       </div>
     </div>
