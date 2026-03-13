@@ -283,3 +283,9 @@ input[type="number"]:focus{
     border-color: var(--secondary-color);
     box-shadow: 0 0 0px .25rem var(--main-color);
 }
+
+/*Adjusts the contact form submit button to the 
+right side of the screen*/
+#contact-submit{
+    float: right;
+}
